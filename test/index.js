@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable import/no-extraneous-dependencies */
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const server = require('../index');

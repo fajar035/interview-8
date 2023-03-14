@@ -18,6 +18,8 @@
     "function-paren-newline": "off",
     "quotes": "off",
     "no-confusing-arrow": "off",
-    "prefer-promise-reject-errors": "off"
+    "prefer-promise-reject-errors": "off",
+    "no-undef": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }
