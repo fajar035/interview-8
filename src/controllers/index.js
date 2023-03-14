@@ -14,7 +14,12 @@ const detailUser = async (req, res) => {
   try {
     const { id } = req.params;
     const result = await userModels.detailUser(id);
-    return response.success(res, 200, result);
+    if (result.length === 0) {
+      return response.success(res, 404, {
+        message: 'Data not found',
+      });
+    }
+    return response.success(res, 200, result[0]);
   } catch (err) {
     return response.failed(res, 500, err);
   }

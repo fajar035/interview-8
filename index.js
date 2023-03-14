@@ -19,3 +19,5 @@ server.use(router);
 server.listen(port, (req, res) =>
   console.log(`Server running at ${host}${port}`),
 );
+
+module.exports = server;
